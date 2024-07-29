@@ -13,17 +13,16 @@ Interaction, Optimization and Robotic Applications (HORA). IEEE, 2021.
 
 
 import matplotlib.pyplot as plt
-from tensorflow.keras.utils import plot_model
+import os
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
 from keras.callbacks import ModelCheckpoint, EarlyStopping
-import os
 from tensorflow.keras.utils import to_categorical
+from tensorflow.keras.utils import plot_model
 from sklearn.utils import class_weight
 from models import models_ddos
-
 
 epochs = 100
 nclass = 12 
